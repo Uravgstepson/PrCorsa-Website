@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 100%;
+  width: auto;
+  position: relative;
+  font-family: "Rubik";
+}
+nav {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.883);
+}
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.nav-links ul li a:hover {
+  color: crimson;
+}
+.item video {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: brown;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: crimson;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+  float: left;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 100%;
+  color: aliceblue;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Rubik";
+}
+.text-box h2 {
+  font-size: 32px;
+}
+.text-box h4 {
+  margin: 10px;
+  font-size: 20px;
+  color: aliceblue;
+}
+.text-box a {
+  color: aliceblue;
+  list-style: none;
+}
+
+.text-box a:hover {
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  transition: 0.5s;
+}
