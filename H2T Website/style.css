@@ -10,7 +10,7 @@
 }
 nav {
   display: flex;
-  padding: 3px;
+  padding: 2px;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.883);
 }
@@ -84,4 +84,10 @@ nav {
   color: rgb(119, 119, 119);
   text-decoration: none;
   transition: 0.5s;
+}
+.scroll-section {
+  padding: 50px;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #333;
 }
