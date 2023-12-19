@@ -106,3 +106,7 @@ nav {
   position: absolute;
   z-index: -2;
 }
+.intro-vid-cell {
+  position: absolute;
+  object-fit: cover;
+}
