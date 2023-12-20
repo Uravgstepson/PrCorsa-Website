@@ -46,15 +46,90 @@ nav {
   color: crimson;
 }
 
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
 .item video {
-  position: absolute;
-  z-index: -3;
+  position: relative;
+  z-index: -0;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
   background-color: brown;
+}
+.ra {
+  position: absolute;
+  padding-left: 7%;
+  padding-top: 12%;
+  color: white; /* Optionally, set the text color */
+  z-index: 2; /* Ensure it appears above the video */
+  font-family: coolvetica;
+  font-size: 110px;
+  text-align: left;
+}
+.rb {
+  position: absolute;
+  padding-left: 7%;
+  padding-top: 17%;
+  color: white; /* Optionally, set the text color */
+  z-index: 2; /* Ensure it appears above the video */
+  font-family: coolvetica;
+  font-size: 85px;
+  text-align: left;
+}
+
+.item a {
+  position: absolute;
+  left: 17.5%;
+  top: 51.5%;
+  color: white; /* Optionally, set the text color */
+  z-index: 2; /* Ensure it appears above the video */
+  font-family: Montserrat thin;
+  font-size: 15px;
+  text-align: center;
+}
+@media (max-height: 1081px) {
+  .ra {
+    position: absolute;
+    padding-left: 7%;
+    padding-top: 12%;
+    color: white; /* Optionally, set the text color */
+    z-index: 2; /* Ensure it appears above the video */
+    font-family: coolvetica;
+    font-size: 110px;
+    text-align: left;
+  }
+  .rb {
+    position: absolute;
+    padding-left: 7%;
+    padding-top: 17%;
+    color: white; /* Optionally, set the text color */
+    z-index: 2; /* Ensure it appears above the video */
+    font-family: coolvetica;
+    font-size: 85px;
+    text-align: left;
+  }
+
+  .item a {
+    position: absolute;
+    left: 17.5%;
+    top: 51.5%;
+    color: white; /* Optionally, set the text color */
+    z-index: 2; /* Ensure it appears above the video */
+    font-family: Montserrat thin;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.item a:hover {
+  color: crimson;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .nav-links ul li::after {
@@ -77,9 +152,11 @@ nav {
   width: 100%;
   color: aliceblue;
   position: relative;
-  align-items: center;
+  bottom: 2%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding-top: 44%;
   font-family: "Rubik";
 }
 
@@ -94,7 +171,6 @@ nav {
 }
 
 .text-box a {
-  padding-top: 25%;
   color: aliceblue;
   list-style: none;
 }
@@ -105,14 +181,39 @@ nav {
   transition: 0.5s;
 }
 
-.image-wraper img {
-  width: 1920px;
-  height: 1020px;
-  object-fit: cover;
-  position: absolute;
-  z-index: -2;
+.scroll-section {
+  padding: 50px;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #333;
 }
-.intro-vid-cell {
-  position: absolute;
-  object-fit: cover;
+
+section {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+s h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+.colagne h2 {
+  font-family: coolvetica;
+  font-size: 70px;
+}
+
+.colagne p {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+}
+
+.colagne {
+  padding-top: 40px;
 }
