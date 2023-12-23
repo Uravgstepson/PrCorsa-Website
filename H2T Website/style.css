@@ -1,13 +1,16 @@
+/*==Body all==*/
 * {
   margin: 0;
   padding: 0;
 }
 
+
+/*==Header==*/
 .header {
   min-height: 100%;
   width: auto;
   position: relative;
-  font-family: "Rubik";
+  font-family: "Montserrat thin";
 }
 
 nav {
@@ -46,15 +49,63 @@ nav {
   color: crimson;
 }
 
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
 .item video {
   position: relative;
-  z-index: 0;
+  z-index: -0;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   background-color: brown;
+}
+.ra {
+  color: white; /* Optionally, set the text color */
+  font-family: coolvetica;
+  font-size: 100px;
+  text-align: center;
+}
+.rb {
+  color: white;
+  font-family: coolvetica;
+  font-size: 135px;
+  text-align: center;
+  position: relative;
+}
+
+.rb::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background-color: crimson;
+  bottom: 0;
+  transition: width 0.3s;
+  float: right;
+}
+
+.rb:hover::after {
+  width: 100%;
+}
+
+.delink {
+  left: 20.5%;
+  top: 51.5%;
+  color: white; /* Optionally, set the text color */
+  z-index: 2; /* Ensure it appears above the video */
+  font-family: Montserrat thin;
+  font-size: 15px;
+  text-align: center;
+}
+
+.delink:hover {
+  color: crimson;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .nav-links ul li::after {
@@ -115,11 +166,9 @@ nav {
 
 section {
   background-color: #f0f0f0;
-  padding: 20px;
   text-align: center;
 }
-
-h2 {
+s h2 {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
@@ -128,4 +177,94 @@ h2 {
 p {
   color: #666;
   font-size: 16px;
+}
+
+.colagne h2 {
+  font-family: coolvetica;
+  font-size: 70px;
+}
+
+.colagne p {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+}
+
+.colagne {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.thetittles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+}
+
+#ferrariCarousel {
+  max-width: 700px;
+  margin: auto;
+}
+
+.carousel-inner img {
+  width: 100%; /* Memastikan gambar di dalam carousel mengisi lebar dengan benar */
+}
+
+.carousel-slide {
+  background-color: aliceblue;
+}
+
+.card-bodys {
+  text-align: left; /* Mengatur teks menjadi di tengah kiri */
+  padding: 10% 8%; /* Padding atas dan bawah serta padding kiri dan kanan */
+}
+
+.card-bodys h5,
+.card-bodys p {
+  font-family: Coolvetica; /* Font untuk judul dan paragraf */
+}
+
+.card-bodys h5 {
+  font-size: 45px; /* Ukuran font untuk judul */
+}
+
+.card-bodys p {
+  padding-top: 5%;
+  font-family: "Montserrat thin"; /* Font untuk paragraf */
+}
+
+/* Mengubah warna panah (arrow) menjadi abu-abu */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(80%); /* Mengurangi kecerahan warna menjadi 80% */
+}
+
+/* Optional: Mengatur ukuran panah */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 2rem; /* Atur ukuran panah sesuai keinginan */
+}
+
+/* Efek hover untuk panah */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: crimson; /* Warna panah saat dihover */
+  opacity: 0.8; /* Atur tingkat transparansi sesuai keinginan */
+}
+
+/* Mengatur posisi panah agar mendekat ke garis */
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: 0; /* Menghilangkan margin atas */
+}
+
+.card-img-top {
+  border-radius: 0; /* Menghapus border round pada gambar */
+}
+.card-imgs {
+  object-fit: cover; /* Menyembunyikan bagian gambar yang tidak muat */
+  width: 1200px; /* Mengatur lebar gambar menjadi 100% dari container */
+  height: 700px; /* Mengatur tinggi awal menjadi 0 */
 }
