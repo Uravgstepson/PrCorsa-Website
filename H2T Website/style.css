@@ -1,13 +1,16 @@
+/*==Body all==*/
 * {
   margin: 0;
   padding: 0;
 }
 
+
+/*==Header==*/
 .header {
   min-height: 100%;
   width: auto;
   position: relative;
-  font-family: "Rubik";
+  font-family: "Montserrat thin";
 }
 
 nav {
@@ -46,15 +49,64 @@ nav {
   color: crimson;
 }
 
+.item {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .item video {
   position: relative;
-  z-index: 0;
+  z-index: -0;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   background-color: brown;
+}
+.ra {
+  color: white; /* Optionally, set the text color */
+  font-family: coolvetica;
+  font-size: 100px;
+  text-align: center;
+}
+.rb {
+  color: white;
+  font-family: coolvetica;
+  font-size: 135px;
+  text-align: center;
+  position: relative;
+}
+
+.rb::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background-color: crimson;
+  bottom: 0;
+  transition: width 0.3s;
+  float: right;
+}
+
+.rb:hover::after {
+  width: 100%;
+}
+
+.delink {
+  left: 20.5%;
+  top: 51.5%;
+  color: white; /* Optionally, set the text color */
+  z-index: 2; /* Ensure it appears above the video */
+  font-family: Montserrat thin;
+  font-size: 15px;
+  text-align: center;
+}
+
+.delink:hover {
+  color: crimson;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .nav-links ul li::after {
@@ -115,17 +167,350 @@ nav {
 
 section {
   background-color: #f0f0f0;
-  padding: 20px;
   text-align: center;
 }
-
 h2 {
   color: #333;
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 p {
   color: #666;
   font-size: 16px;
+}
+
+.colagne h2 {
+  font-family: coolvetica;
+  font-size: 70px;
+}
+
+.colagne p {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.colagne {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 75vh;
+}
+
+.colagnes {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.colagnes h2 {
+  font-family: coolvetica;
+  font-size: 70px;
+  text-align: center; /* Menengahkan horisontal */
+  margin-bottom: 20px; /* Memberi sedikit jarak ke bawah */
+}
+
+.x1 {
+  width: 1200px;
+  font-family: "Montserrat thin";
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.thetittles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+}
+
+#ferrariCarousel {
+  max-width: 800px;
+  padding: 40px 0px;
+  margin: auto;
+}
+
+.carousel-inner img {
+  width: 100%; /* Memastikan gambar di dalam carousel mengisi lebar dengan benar */
+}
+
+.carousel-slide {
+  background-color: aliceblue;
+}
+
+.card-bodys {
+  text-align: left; /* Mengatur teks menjadi di tengah kiri */
+  padding: 10% 8%; /* Padding atas dan bawah serta padding kiri dan kanan */
+}
+
+.card-bodys h5,
+.card-bodys p {
+  font-family: Coolvetica; /* Font untuk judul dan paragraf */
+}
+
+.card-bodys h5 {
+  font-size: 45px; /* Ukuran font untuk judul */
+}
+
+.card-bodys p {
+  padding-top: 5%;
+  font-family: "Montserrat thin"; /* Font untuk paragraf */
+}
+
+/* Mengubah warna panah (arrow) menjadi abu-abu */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(25%); /* Mengurangi kecerahan warna menjadi 80% */
+}
+
+/* Optional: Mengatur ukuran panah */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 2rem; /* Atur ukuran panah sesuai keinginan */
+}
+
+/* Efek hover untuk panah */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: crimson; /* Warna panah saat dihover */
+  opacity: 1; /* Atur tingkat transparansi sesuai keinginan */
+}
+
+.card-img-top {
+  object-fit: cover;
+  max-width: 600px;
+  height: 400px;
+}
+.card-imgs {
+  object-fit: cover; /* Menyembunyikan bagian gambar yang tidak muat */
+  width: 1200px; /* Mengatur lebar gambar menjadi 100% dari container */
+  height: 700px; /* Mengatur tinggi awal menjadi 0 */
+}
+
+.Values {
+  display: flex;
+  justify-content: center; /* Agar card berjarak secara merata */
+  padding-top: 25px;
+}
+
+.card {
+  margin-right: 20px; /* Untuk memberi jarak antar card (bisa disesuaikan) */
+}
+
+.Values h1 {
+  font-family: coolvetica;
+  text-align: left;
+  font-size: 45px;
+}
+
+.Values P {
+  text-align: justify;
+  font-family: Montserrat thin;
+  font-size: 13px;
+}
+
+.ari {
+  padding-top: 40px;
+}
+.race {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.137)),
+    url(AllAssets/howard-bouchevereau-l87JKfXFcm4-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: #497174;
+}
+
+.race h1 {
+  color: white;
+  font-family: coolvetica;
+  font-size: 90px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.race p {
+  color: aliceblue;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat thin;
+}
+
+/* Existing styles for .race h1 and .bannerx */
+
+.discover-button {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #ffffff; /* Ferrari red color */
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+  font-family: Montserrat thin;
+  font-size: 20px;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+}
+
+.discover-button:hover {
+  color: aliceblue;
+  background-color: #a61c11; /* Darker red on hover */
+}
+
+.split-banner {
+  width: 100%;
+  display: flex;
+  max-height: 600px;
+  background-color: #181818; /* Background abu-abu gelap */
+}
+
+.text-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: px;
+  border-color: whitesmoke;
+  color: #fff; /* Warna teks putih untuk kontras */
+}
+
+.image-side {
+  flex: 1;
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.image-side img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: Coolvetica;
+  font-size: 89px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  font-family: Montserrat thin;
+  font-size: 15px;
+  text-align: justify;
+}
+.yiflink {
+  float: left;
+}
+
+.yiflink a {
+  color: darkslategrey;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 5px 19px;
+  font-family: Montserrat thin;
+  border: 1px solid darkslategray;
+  border-radius: 5px;
+}
+
+.yiflink a:hover {
+  background-color: transparent;
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.typo-text {
+  align-items: baseline;
+  position: relative;
+  padding: 40px 10px;
+  max-width: 1200px;
+  text-align: justify;
+  left: 49.5%;
+  transform: translate(-50%);
+}
+
+.typo-headline {
+  font-family: "Montserrat thin", sans-serif;
+  font-size: 25px;
+}
+
+.typo-text p {
+  font-family: "Montserrat thin";
+  font-size: 13px;
+}
+
+.sect2h {
+  padding-bottom: 40px;
+  font-family: coolvetica;
+  font-size: 70px;
+  text-align: center; /* Menengahkan horisontal */
+}
+
+.teaser-imagecol0 {
+  max-width: 100%;
+}
+
+.teaser-image-wraper img {
+  width: 100%;
+}
+div {
+  display: block;
+}
+.collage-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collage-side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.collage-image {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  grid-template-rows: repeat(2, 1fr); /* 2 baris */
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Untuk mempertahankan aspek gambar */
 }
