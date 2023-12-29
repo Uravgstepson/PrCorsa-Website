@@ -169,10 +169,9 @@ section {
   background-color: #f0f0f0;
   text-align: center;
 }
-s h2 {
+h2 {
   color: #333;
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 p {
@@ -193,6 +192,7 @@ p {
 .colagne {
   padding-top: 40px;
   padding-bottom: 40px;
+  height: 75vh;
 }
 
 .colagnes {
@@ -226,7 +226,8 @@ p {
 }
 
 #ferrariCarousel {
-  max-width: 700px;
+  max-width: 800px;
+  padding: 40px 0px;
   margin: auto;
 }
 
@@ -260,7 +261,7 @@ p {
 /* Mengubah warna panah (arrow) menjadi abu-abu */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: brightness(80%); /* Mengurangi kecerahan warna menjadi 80% */
+  filter: brightness(25%); /* Mengurangi kecerahan warna menjadi 80% */
 }
 
 /* Optional: Mengatur ukuran panah */
@@ -273,13 +274,7 @@ p {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   color: crimson; /* Warna panah saat dihover */
-  opacity: 0.8; /* Atur tingkat transparansi sesuai keinginan */
-}
-
-/* Mengatur posisi panah agar mendekat ke garis */
-.carousel-control-prev,
-.carousel-control-next {
-  margin-top: 0; /* Menghilangkan margin atas */
+  opacity: 1; /* Atur tingkat transparansi sesuai keinginan */
 }
 
 .card-img-top {
@@ -446,4 +441,59 @@ p {
   background-color: transparent;
   color: aliceblue;
   transition: 0.3s;
+}
+
+.typo-text {
+  align-items: baseline;
+  position: relative;
+  padding: 40px 10px;
+  max-width: 1200px;
+  text-align: justify;
+  left: 49.5%;
+  transform: translate(-50%);
+}
+
+.typo-headline {
+  font-family: "Montserrat thin", sans-serif;
+  font-size: 25px;
+}
+
+.typo-text p {
+  font-family: "Montserrat thin";
+  font-size: 13px;
+}
+
+.sect2h {
+  padding-bottom: 40px;
+  font-family: coolvetica;
+  font-size: 70px;
+  text-align: center; /* Menengahkan horisontal */
+}
+
+.teaser-imagecol0 {
+  max-width: 100%;
+}
+
+.teaser-image-wraper img {
+  width: 100%;
+}
+div {
+  display: block;
+}
+.collage-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collage-side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.collage-image {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
